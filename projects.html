@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects | Alexander F. Valenzuela</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header with Logo and Nav -->
+  <header>
+    <div class="navmenu">
+      <img src="AFV Logo.png" alt="Portfolio Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Projects Section -->
+  <main id="projects" class="profile">
+    <h1>My Projects</h1>
+    <div class="profile-container">
+
+      <div class="card">
+        <h2>
+          <img src="ass-icon.png" alt="" class="logo-icon" />Laboratory</h2>
+        <div class="button-container">
+          <button onclick="window.location.href='laboratory.html'">View Laboratory</button>
+      </div>
+      </div>
+      
+      <div class="card">
+        <h2>
+          <img src="ass-icon.png" alt="" class="logo-icon" />Exercises</h2>
+        <div class="button-container">
+          <button onclick="window.location.href='exercises.html'">View Exercises</button>
+      </div>
+      </div>
+      
+
+    </div>
+  </main>
+  <script>
+    function showDetails(projectName) {
+      if (projectName === "Laboratoty") {
+        window.location.href = "lab-details.html";
+      } else if (projectName === "Exercises") {
+        window.location.href = "exercise-details.html";
+      }
+    }
+  </script>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 My Portfolio | Designed by Alexander F. Valenzuela</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .image-section, .code-section {
+            margin-top: 30px;
+        }
+        .image-section img {
+            max-width: 45%;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+
+            justify-content: center;
+        }
+        .image-section :hover{
+            transform: scale(1.05);
+            transition: transform 0.2s;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+} 
+     button:hover {
+    background-color: #ffe100;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">Exercise 3</h1>
+        <div style="display: flex; justify-content: center; padding: 20px;">
+    
+        </div>
+     <div style="display: flex; justify-content: left; padding: 20px;">
+    <button onclick="window.location.href='exercises.html'" 
+            style="padding: 10px 20px; font-size: 22px; cursor: pointer; background-color: #f4b400; color: black; border: none; border-radius: 5px;">
+        Back
+    </button>
+</div>
+</div>
+    <div class="image-section">
+    <h2>Screenshots</h2>
+    <div class="image-wrapper">
+        <img src="Exercise3(1).png" alt="Screenshot 1">
+        <img src="Exercise3(2).png" alt="Screenshot 2">
+    </div>
+</div>
+
+<div class="code-section" style="display: flex; flex-direction: column; align-items: center;">
+    <h2>Source Code</h2>
+    <button onclick="window.open('https://drive.google.com/drive/folders/1osUsIv1xzc040yPox5MZImQ-xF4sD9Ux?usp=drive_link', '_blank')" 
+            style="padding: 10px 20px; font-size: 22px; cursor: pointer; background-color: #f4b400; color: black; border: none; border-radius: 5px;">
+        Click here
+    </button>
+
+    </button>
+
+</div>
+
+</body>
+</html>
